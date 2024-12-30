@@ -1,0 +1,47 @@
+.buttonUI{
+    background-color: rgb(22, 5, 5);
+    border: 1px;
+    display: flex;
+    gap: 100px;
+    bottom: 0;
+    position: absolute;
+    padding: 2%;
+}
+.buttonUI > span{
+    gap :100px;
+    position: absolute;
+}
+.balanceDiv{
+    color: red;
+}
+.demopriceDiv{
+    display: grid;
+}
+.spinBtn{
+    margin-top: 5%;
+}
+.spinBtn button{
+    padding: 20%;
+    font-weight: bold;
+    background-color: green;
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.betAction{
+    gap: 5px;
+    position: relative;
+}
+.betAction button{
+   /* position: absolute; */
+    padding: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: green;
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
