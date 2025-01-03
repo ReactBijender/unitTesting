@@ -1,0 +1,60 @@
+/* Basic Styling for the Modal */
+.modal {
+    display: block;  /* Hide the modal by default */
+    position: fixed; /* Position fixed relative to the viewport */
+    z-index: 1; /* Ensure the modal is on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Allow scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black background */
+  }
+  
+  /* Modal Content */
+  .modalContent {
+    background-color: #fff;
+    margin: 15% auto; /* Center the modal vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Modal width */
+    max-width: 500px; /* Max width to keep it responsive */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  
+  /* Close button hover effect */
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Modal Content Styling (Text) */
+  h2 {
+    margin: 0;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

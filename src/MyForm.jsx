@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import useFormValidation from "./useFormValidation";
 const validation = (data) => {
     const error = {name: "", email: ""};
@@ -13,12 +14,19 @@ const validation = (data) => {
     return error;
 }
 const MyForm = () => {
+    const nameInputRef  = useRef(null);
    const [state,  handleChange, handleSubmit, errors] = useFormValidation({name: "", email: ""}, validation);
+    
+    console.log("ref=>", nameInputRef )
+    nameInputRef.current =state.name;
+   // Create an event listener
+  
+   
     return (
         <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="name">Name</label>
-                <input type="text" name='name' id='name' data-testid="name-input" onChange={handleChange}/>{state.name}
+                <input type="text" name='name' id='name' data-testid="name-input" onChange={handleChange}  ref={nameInputRef }/>{state.name}
                 {errors?.name && <span data-testid="error-name-message">{errors.name}</span>}
             </div>
             <div>

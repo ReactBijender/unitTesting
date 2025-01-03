@@ -8,6 +8,8 @@ const useFormValidataion = (data, validation) =>{
     }
     const handleSubmit=(e)=>{
         e.preventDefault();
+        console.log(`Hello!`);
+       
         setErrors(validation(value));
     }
     return [value, handleChange, handleSubmit, errors]
